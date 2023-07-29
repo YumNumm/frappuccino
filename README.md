@@ -1,16 +1,21 @@
-# frappuccino
+# YSF 蒼煌祭 2023 入退場・予約管理システム `ysf-frappuccino`
+## 概要
+YSF 蒼煌祭 2023 における入退場・予約管理システムです。
 
-A new Flutter project.
+## 開発環境・デプロイ環境
 
-## Getting Started
+- Flutter 3.10.6
+- Supabase Cloud
+  - Supaabse Auth
+  - DB
 
-This project is a starting point for a Flutter application.
+- Firebase
+  - Crashlytics
+  - Messaging
 
-A few resources to get you started if this is your first Flutter project:
+## Flutter Flavorizr
+```bash
+sudo gem install xcodeproj
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
