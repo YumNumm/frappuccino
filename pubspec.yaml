@@ -8,16 +8,41 @@ environment:
   sdk: ">=3.0.5 <4.0.0"
 
 dependencies:
+  cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.2
+  flutter_web_plugins:
+    sdk: flutter
 
 dev_dependencies:
+  flutter_flavorizr: ^2.2.1
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.0
-
 flutter:
   uses-material-design: true
+
+
+flavors:
+  apple:
+    app:
+      name: "Frappuccino"
+
+    android:
+      applicationId: "net.ysf-frappuccino.frappuccino"
+    ios:
+      bundleId: "net.ysf-frappuccino.frappuccino"
+    macos:
+      bundleId: "net.ysf-frappuccino.frappuccino"
+  banana:
+    app:
+      name: "Banana App"
+
+    android:
+      applicationId: "com.example.banana"
+    ios:
+      bundleId: "com.example.banana"
+    macos:
+      bundleId: "com.example.banana"
