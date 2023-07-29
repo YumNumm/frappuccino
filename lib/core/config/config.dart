@@ -1,28 +1,21 @@
 // ignore_for_file: do_not_use_environment
 
-import 'package:riverpod_annotation/riverpod_annotation.dart';
-
-part 'config.g.dart';
-
-@riverpod
-Config config(ConfigRef ref) {
-  throw UnimplementedError();
-}
-
 // ref: https://github.com/FlutterKaigi/2023/blob/main/lib/app/config.dart
 class Config {
-  factory Config() {
+  factory Config() => instance;
+  factory Config._internal() {
     final flavor = Flavor.values.byName(
       const String.fromEnvironment('FLAVOR'),
     );
     return Config._(
-      flavor: flavor,
+      flavor,
     );
   }
 
-  const Config._({
-    required Flavor flavor,
-  }) : _flavor = flavor;
+  Config._(this._flavor);
+
+  // インスタンスはただ１つだけ
+  static final Config instance = Config._internal();
 
   final Flavor _flavor;
 
