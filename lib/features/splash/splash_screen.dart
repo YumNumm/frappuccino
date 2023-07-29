@@ -20,7 +20,7 @@ class SplashScreen extends HookConsumerWidget {
             if (session != null) {
               context.go(const HomeRoute().location);
             } else {
-              context.go(const AuthRoute().location);
+              context.go(const LoginRoute().location);
             }
           },
         );

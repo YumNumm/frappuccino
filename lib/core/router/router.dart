@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frappuccino/features/error/error_page.dart';
 import 'package:frappuccino/features/home/home_page.dart';
+import 'package:frappuccino/features/login/login_page.dart';
 import 'package:frappuccino/features/splash/splash_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -14,14 +15,12 @@ GoRouter router(RouterRef ref) => GoRouter(
       initialLocation: const SplashRoute().location,
     );
 
-@TypedGoRoute<AuthRoute>(path: '/auth')
-class AuthRoute extends GoRouteData {
-  const AuthRoute();
+@TypedGoRoute<LoginRoute>(path: '/login')
+class LoginRoute extends GoRouteData {
+  const LoginRoute();
 
   @override
-  Widget build(BuildContext context, GoRouterState state) {
-    return const SizedBox();
-  }
+  Widget build(BuildContext context, GoRouterState state) => const LoginPage();
 }
 
 @TypedGoRoute<ErrorRoute>(path: '/error')
