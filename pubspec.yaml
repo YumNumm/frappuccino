@@ -1,6 +1,8 @@
 name: frappuccino
 description: A new Flutter project.
 publish_to: "none"
+homepage: "https://ysf-frappuccino.net/"
+repository: "https://github.com/YumNumm/ysf-frappuccino"
 
 version: 1.0.0+1
 
@@ -9,6 +11,9 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
+  firebase_core: ^2.15.0
+  firebase_crashlytics: ^3.3.4
+  firebase_performance: ^0.9.2+4
   flutter:
     sdk: flutter
 
@@ -24,25 +29,3 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-
-flavors:
-  apple:
-    app:
-      name: "Frappuccino"
-
-    android:
-      applicationId: "net.ysf-frappuccino.frappuccino"
-    ios:
-      bundleId: "net.ysf-frappuccino.frappuccino"
-    macos:
-      bundleId: "net.ysf-frappuccino.frappuccino"
-  banana:
-    app:
-      name: "Banana App"
-
-    android:
-      applicationId: "com.example.banana"
-    ios:
-      bundleId: "com.example.banana"
-    macos:
-      bundleId: "com.example.banana"
