@@ -30,9 +30,9 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
+  pedantic_mono: ^1.23.0
   riverpod_generator: ^2.2.4
   riverpod_lint: ^1.4.0
 
 flutter:
   uses-material-design: true
-
