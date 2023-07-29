@@ -26,6 +26,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "app_links",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/app_links-3.4.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/archive-3.3.7",
       "packageUri": "lib/",
@@ -182,16 +188,40 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "dynamic_color",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/dynamic_color-1.6.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "envied",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/envied-0.3.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "envied_generator",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/envied_generator-0.3.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "file",
-      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/file-7.0.0",
+      "name": "ffi",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/ffi-2.0.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/file-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "firebase_core",
@@ -302,16 +332,52 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "functions_client",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/functions_client-1.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "glob",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/glob-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
+      "name": "go_router",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/go_router-10.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "go_router_builder",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/go_router_builder-2.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "gotrue",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/gotrue-1.11.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "graphs",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/graphs-2.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "hive",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/hive-2.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "hive_flutter",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/hive_flutter-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "hooks_riverpod",
@@ -324,6 +390,12 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/hotreloader-3.0.6",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/http-0.13.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "http_multi_server",
@@ -360,6 +432,12 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/json_annotation-4.8.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "jwt_decode",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/jwt_decode-0.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "lints",
@@ -410,6 +488,42 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "path_provider",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/path_provider-2.0.15",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/path_provider_android-2.0.27",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/path_provider_foundation-2.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/path_provider_linux-2.1.11",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/path_provider_windows-2.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "pedantic_mono",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/pedantic_mono-1.23.0",
       "packageUri": "lib/",
@@ -420,6 +534,12 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/petitparser-5.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/platform-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "plugin_platform_interface",
@@ -440,6 +560,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "postgrest",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/postgrest-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "pub_semver",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
       "packageUri": "lib/",
@@ -450,6 +576,18 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/pubspec_parse-1.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "realtime_client",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/realtime_client-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "retry",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/retry-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "riverpod",
@@ -488,6 +626,48 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "shared_preferences",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shared_preferences-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "shared_preferences_android",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shared_preferences_android-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "shared_preferences_foundation",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "shared_preferences_linux",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shared_preferences_platform_interface-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "shared_preferences_web",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shared_preferences_web-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "shared_preferences_windows",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "shelf",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/shelf-1.4.1",
       "packageUri": "lib/",
@@ -500,6 +680,24 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "sign_in_with_apple",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/sign_in_with_apple-4.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "sign_in_with_apple_platform_interface",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/sign_in_with_apple_platform_interface-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "sign_in_with_apple_web",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/sign_in_with_apple_web-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/r_onoue/fvm/versions/3.10.6/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -510,6 +708,12 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/source_gen-1.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "source_helper",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/source_helper-1.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "source_span",
@@ -536,6 +740,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "storage_client",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/storage_client-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "stream_channel",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/stream_channel-2.1.1",
       "packageUri": "lib/",
@@ -552,6 +762,18 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "supabase",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/supabase-1.9.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "supabase_flutter",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/supabase_flutter-1.10.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "term_glyph",
@@ -576,6 +798,60 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "universal_io",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/universal_io-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "url_launcher",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher-6.1.12",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "url_launcher_android",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher_android-6.0.37",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "url_launcher_ios",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher_ios-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "url_launcher_linux",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher_linux-3.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "url_launcher_macos",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher_macos-3.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "url_launcher_platform_interface",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "url_launcher_web",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher_web-2.0.18",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "url_launcher_windows",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/url_launcher_windows-3.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "uuid",
@@ -608,6 +884,42 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "webview_flutter",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/webview_flutter-4.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "webview_flutter_android",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/webview_flutter_android-3.9.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "webview_flutter_platform_interface",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/webview_flutter_platform_interface-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "webview_flutter_wkwebview",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.7.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "win32",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/win32-5.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/xdg_directories-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "xml",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/xml-6.3.0",
       "packageUri": "lib/",
@@ -620,13 +932,19 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "yet_another_json_isolate",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/yet_another_json_isolate-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "frappuccino",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-07-29T17:00:52.802563Z",
+  "generated": "2023-07-29T17:55:19.921630Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }
