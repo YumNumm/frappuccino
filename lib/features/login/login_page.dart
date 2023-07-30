@@ -38,19 +38,11 @@ class LoginPage extends HookConsumerWidget {
             Success() => {
                 if (context.mounted)
                   {
-                    // メール送信完了ダイアログ
-                    await showDialog<void>(
-                      context: context,
-                      builder: (_) => AlertDialog(
-                        title: const Text('メール送信完了'),
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
                         content:
-                            const Text('メールを送信しました。メール内のリンクをタップしてログインしてください。'),
-                        actions: [
-                          TextButton(
-                            onPressed: Navigator.of(context).pop,
-                            child: const Text('OK'),
-                          ),
-                        ],
+                            const Text('メールを送信しました。メール内のリンクをタップしてログインしてください'),
+                        backgroundColor: Theme.of(context).colorScheme.error,
                       ),
                     )
                   }
