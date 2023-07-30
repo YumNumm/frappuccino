@@ -49,7 +49,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'net.ysf_frappuccino.frappuccino'
+        applicationId 'net.yumnumm.frappuccino'
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
