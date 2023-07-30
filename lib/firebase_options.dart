@@ -2,7 +2,7 @@
 // ignore_for_file: lines_longer_than_80_chars, avoid_classes_with_only_static_members
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
-    show TargetPlatform, defaultTargetPlatform, kIsWeb;
+    show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -39,10 +39,9 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for linux - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
-      case TargetPlatform.fuchsia:
+      default:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for fuchsia - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+          'DefaultFirebaseOptions are not supported for this platform.',
         );
     }
   }
@@ -59,7 +58,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDXagUi7rY-cc9QHBjGmBLAu5v4LWAt4uI',
-    appId: '1:803948448282:android:85f38b612bdbb57b7c9fa3',
+    appId: '1:803948448282:android:9eaac2a1126da6df7c9fa3',
     messagingSenderId: '803948448282',
     projectId: 'ysf-frappuccino-prod',
     storageBucket: 'ysf-frappuccino-prod.appspot.com',
@@ -67,12 +66,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAyXCjqxhwHwS0Gw-GEwkiLOz9UVwXclKA',
-    appId: '1:803948448282:ios:4e1a1f29262d6c367c9fa3',
+    appId: '1:803948448282:ios:28272750c9de7b187c9fa3',
     messagingSenderId: '803948448282',
     projectId: 'ysf-frappuccino-prod',
     storageBucket: 'ysf-frappuccino-prod.appspot.com',
-    iosClientId:
-        '803948448282-4nve17llqcgc28hnqll14k8ujsjb8r5u.apps.googleusercontent.com',
-    iosBundleId: 'net.ysf-frappuccino.frappuccino',
+    iosClientId: '803948448282-g0ic7ssde0etouhav48mral4058loiau.apps.googleusercontent.com',
+    iosBundleId: 'n',
   );
 }
