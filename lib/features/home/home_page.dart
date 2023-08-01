@@ -1,7 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:frappuccino/core/router/router.dart';
+import 'package:frappuccino/core/supabase/model/db/groups.dart';
+import 'package:frappuccino/core/supabase/service/supabase_service.dart';
 import 'package:frappuccino/core/supabase/supabase_client.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -12,6 +12,7 @@ class HomePage extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final service = ref.watch(frappuccinnoServiceProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Frappuccino'),
@@ -24,17 +25,46 @@ class HomePage extends HookConsumerWidget {
                 return Text('Error: ${snapshot.error}');
               }
               if (snapshot.hasData) {
-                final data = snapshot.data as List<Map<String, dynamic>>;
-                return Text(const JsonEncoder.withIndent(' ').convert(data[0]));
+                final data = snapshot.data;
+                final profile = data?.profile;
+                final groups = data?.groups;
+                return Column(
+                  children: [
+                    ListTile(
+                      title: const Text('Profile'),
+                      subtitle: Column(
+                        children: [
+                          Text('uuid: ${profile?.uuid}'),
+                          Text('name: ${profile?.name}'),
+                          Text('email: ${profile?.email}'),
+                          Text('createdAt: ${profile?.createdAt}'),
+                          Text('comeAt: ${profile?.comeAt}'),
+                          Text('leaveAt: ${profile?.leaveAt}'),
+                        ],
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        title: const Text('Groups'),
+                        subtitle: Column(
+                          children: [
+                            for (final group in groups ?? <Groups>[]) ...[
+                              Text('name: ${group.name}'),
+                              Text('className: ${group.className}'),
+                              const Divider()
+                            ]
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                );
               }
               return const Center(
                 child: CircularProgressIndicator(),
               );
             },
-            future: ref
-                .watch(supabaseClientProvider)
-                .rpc('get_profile')
-                .select<List<Map<String, dynamic>>>(),
+            future: service.profileService.getMyProfile(),
           ),
           Center(
             child: ElevatedButton.icon(
