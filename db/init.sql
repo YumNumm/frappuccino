@@ -12,20 +12,24 @@ CREATE TYPE user_type AS ENUM (
 
 CREATE TABLE IF NOT EXISTS public.profiles(
   id UUID PRIMARY KEY REFERENCES auth.users on delete cascade,
-  name TEXT,
+  name TEXT NOT NULL DEFAULT '',
   email TEXT NOT NULL UNIQUE,
-  type user_type,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+  type user_type NOT NULL DEFAULT 'general',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  come_at TIMESTAMP,
+  leave_at TIMESTAMP,
 );
 
-CREATE
-OR REPLACE FUNCTION user_type(_user_id UUID) RETURNS user_type AS $ $
+CREATE OR REPLACE FUNCTION user_type(_user_id UUID)
+RETURNS user_type
+AS $$
 SELECT
   type
 FROM
   public.profiles
 WHERE
-  id = _user_id $ $ LANGUAGE sql SECURITY DEFINER;
+  id = _user_id;
+$$ LANGUAGE sql SECURITY DEFINER;
 
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Allow select only own profile" ON public.profiles
@@ -49,15 +53,17 @@ CREATE TYPE group_type AS ENUM (
 
 CREATE TABLE IF NOT EXISTS public.groups(
   id UUID default uuid_generate_v4() PRIMARY KEY,
+  class TEXT,
   name TEXT NOT NULL,
-  description TEXT,
+  description TEXT NOT NULL DEFAULT '',
   place TEXT,
-  type group_type NOT NULL
+  type group_type NOT NULL,
+  image_url TEXT
 );
 
 CREATE TABLE IF NOT EXISTS public.profile_groups(
-  group_id UUID REFERENCES public.groups(id),
-  user_id UUID REFERENCES public.profiles(id),
+  group_id UUID NOT NULL REFERENCES public.groups(id) ON DELETE CASCADE,
+  user_id UUID NOT NULL REFERENCES public.profiles(id) ON DELETE CASCADE,
   PRIMARY KEY (group_id, user_id)
 );
 
@@ -71,7 +77,6 @@ SELECT EXISTS(
   WHERE user_id = _user_id AND group_id = _group_id
 )
 $$ LANGUAGE sql SECURITY DEFINER;
-
 
 
 ALTER TABLE public.profile_groups ENABLE ROW LEVEL SECURITY;
@@ -201,7 +206,7 @@ $$;
 
 DROP FUNCTION IF EXISTS public.join_reservation;
 CREATE OR REPLACE FUNCTION public.join_reservation(_slot_id UUID)
-RETURNS BOOL
+RETURNS void
 LANGUAGE plpgsql
 AS $$
 BEGIN
@@ -238,6 +243,15 @@ END IF;
 INSERT INTO public.reservations (user_id, slot_id)
 VALUES (auth.uid(), _slot_id);
 
-RETURN true;
 END;
+$$;
+
+
+DROP FUNCTION IF EXISTS public.leave_reservation;
+CREATE OR REPLACE FUNCTION public.leave_reservation(_slot_id UUID)
+RETURNS void
+LANGUAGE sql
+AS $$
+DELETE FROM public.reservations
+WHERE user_id = auth.uid() AND slot_id = _slot_id;
 $$;
