@@ -326,6 +326,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "freezed",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/freezed-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "freezed_annotation",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/freezed_annotation-2.4.1",
       "packageUri": "lib/",
@@ -438,6 +444,12 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/json_annotation-4.8.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "json_serializable",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/json_serializable-6.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "jwt_decode",
@@ -950,7 +962,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-07-29T18:38:33.728082Z",
+  "generated": "2023-08-01T11:28:13.816957Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }
