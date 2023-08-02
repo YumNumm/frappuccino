@@ -6,7 +6,7 @@ part 'profiles.g.dart';
 @freezed
 class Profiles with _$Profiles {
   const factory Profiles({
-    required String uuid,
+    required String id,
     required String name,
     required String email,
     required UserType type,

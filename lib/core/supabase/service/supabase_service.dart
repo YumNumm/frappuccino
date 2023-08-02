@@ -32,9 +32,9 @@ class ProfileService {
     try {
       final res = await _client
           .from('profiles')
-          .select<PostgrestMapResponse>()
+          .select<PostgrestListResponse>()
           .eq('uuid', uuid);
-      return Profiles.fromJson(res.data ?? {});
+      return Profiles.fromJson(res.data?.firstOrNull ?? {});
     } on Exception catch (e) {
       throw Exception('Failed to get profile: $e');
     }
@@ -59,7 +59,11 @@ class ProfileService {
   Future<GetProfile> getMyProfile() async {
     final res = await _client.rpc('get_profile');
     try {
-      return GetProfile.fromJson(res as Map<String, dynamic>);
+      final response = (res as List<dynamic>).firstOrNull;
+      if (response == null) {
+        throw Exception('Failed to get profile: response is empty');
+      }
+      return GetProfile.fromJson(response as Map<String, dynamic>);
     } on Exception {
       throw Exception('Failed to get profile');
     }

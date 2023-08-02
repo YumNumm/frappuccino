@@ -596,6 +596,18 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "qr",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/qr-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "qr_flutter",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/qr_flutter-4.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "realtime_client",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/realtime_client-1.1.2",
       "packageUri": "lib/",
@@ -962,7 +974,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-01T11:28:13.816957Z",
+  "generated": "2023-08-02T12:40:46.992050Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }
