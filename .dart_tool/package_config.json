@@ -368,6 +368,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "google_fonts",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/google_fonts-5.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "gotrue",
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/gotrue-1.11.1",
       "packageUri": "lib/",
@@ -405,9 +411,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/http-0.13.6",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/http-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "http_multi_server",
@@ -426,6 +432,12 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/image-4.0.17",
       "packageUri": "lib/",
       "languageVersion": "2.15"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/intl-0.18.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "io",
@@ -492,6 +504,12 @@
       "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/mime-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "mobile_scanner",
+      "rootUri": "file:///Users/r_onoue/.pub-cache/hosted/pub.dev/mobile_scanner-3.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "package_config",
@@ -974,7 +992,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-02T12:40:46.992050Z",
+  "generated": "2023-08-02T14:15:55.933366Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }

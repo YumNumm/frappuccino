@@ -4,6 +4,7 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:frappuccino/core/router/router.dart';
 import 'package:frappuccino/core/theme/custom_colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class App extends ConsumerWidget {
@@ -53,11 +54,13 @@ class App extends ConsumerWidget {
             colorScheme: lightColorScheme,
             extensions: [lightCustomColors],
             useMaterial3: true,
+            fontFamily: GoogleFonts.notoSans().fontFamily,
           ),
           darkTheme: ThemeData(
             colorScheme: darkColorScheme,
             extensions: [darkCustomColors],
             useMaterial3: true,
+            fontFamily: GoogleFonts.notoSans().fontFamily,
           ),
         );
       },

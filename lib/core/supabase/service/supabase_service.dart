@@ -1,3 +1,4 @@
+import 'package:frappuccino/core/supabase/model/db/groups.dart';
 import 'package:frappuccino/core/supabase/model/db/profiles.dart';
 import 'package:frappuccino/core/supabase/model/function/get_group.dart';
 import 'package:frappuccino/core/supabase/model/function/get_profile.dart';
@@ -117,6 +118,19 @@ class GroupService {
     try {
       final data = res as List<Map<String, dynamic>>;
       return data.map(GetGroup.fromJson).toList();
+    } on Exception {
+      throw Exception('Failed to get groups');
+    }
+  }
+
+  Future<List<Groups>> getGroupList() async {
+    final res = await _client.from('groups').select<PostgrestListResponse>();
+    try {
+      final data = res.data;
+      if (data == null) {
+        throw Exception('Failed to get groups: data is null');
+      }
+      return data.map(Groups.fromJson).toList();
     } on Exception {
       throw Exception('Failed to get groups');
     }

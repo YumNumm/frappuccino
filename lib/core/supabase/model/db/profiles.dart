@@ -13,6 +13,8 @@ class Profiles with _$Profiles {
     required DateTime createdAt,
     required DateTime? comeAt,
     required DateTime? leaveAt,
+    required int counter,
+    required List<int>? avaliableDays,
   }) = _Profiles;
 
   factory Profiles.fromJson(Map<String, dynamic> json) =>
